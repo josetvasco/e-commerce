@@ -121,17 +121,17 @@
       "imagen": "https://cdn.shopify.com/s/files/1/0492/2458/1274/products/supermercados_la_vaquita_supervaquita_agua_brisa_1l_ecoflex_bebidas_liquidas_2b6ae2d9-3f61-4bfd-9f38-bf4258f1db8e_1024x1024.jpg?v=1620488174"
     }
   ],
-  "favoritos": [],
-  "carrito": [
+  "favoritos": [
     {
-      "imagen": "https://exitocol.vtexassets.com/arquivos/ids/13174757/Lenteja-Frescampo-X-1000-gr-1121606_a.jpg?v=1754195957",
-      "nombre": "LENTEJAS",
-      "medida": "500 GR",
-      "categoria": "DESPENSA",
-      "precio": 2900,
-      "id": 2,
-      "cantidad": 2
-    },
+      "imagen": "https://multimedia.diezequis.com/articulos/leche1000-012_1.jpg",
+      "nombre": "LECHE",
+      "medida": "1 L",
+      "categoria": "LACTEOS",
+      "precio": 2500,
+      "id": 4
+    }
+  ],
+  "carrito": [
     {
       "imagen": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/186299/7702511000021.jpg?v=637813981775570000",
       "nombre": "ARROZ",
@@ -139,6 +139,15 @@
       "categoria": "DESPENSA",
       "precio": 2500,
       "id": 1,
+      "cantidad": 3
+    },
+    {
+      "imagen": "https://exitocol.vtexassets.com/arquivos/ids/13174757/Lenteja-Frescampo-X-1000-gr-1121606_a.jpg?v=1754195957",
+      "nombre": "LENTEJAS",
+      "medida": "500 GR",
+      "categoria": "DESPENSA",
+      "precio": 2900,
+      "id": 2,
       "cantidad": 1
     }
   ]

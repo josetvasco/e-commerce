@@ -4,6 +4,7 @@ const API_FAVORITO = 'http://localhost:3000/favoritos/';
 
 const sectionCart = document.getElementById('subSection-cart');
 const sectionCart2 = document.getElementById('section-cart');
+const sectionDatos = document.getElementById('section-datos');
 const inputCantidad = document.getElementById('input-cantidad');
 const restarButton = document.getElementById('restar-button');
 const totalCOP = document.getElementById('total-COP');
@@ -217,7 +218,46 @@ const cambioCarrito = async (api) => {
     cantidadCarrito.textContent = data4.length
 }
 
-cambioCarrito(API_URL)
+cambioCarrito(API_URL);
+
+//Aquiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii
+sectionDatos.addEventListener('click', (e) => {
+    e.preventDefault();
+    const btnBuyNow = e.target.classList.contains('button-buy-now');
+
+    if(btnBuyNow) {
+        const productoSeleccionado = e.target.parentElement.parentElement.parentElement;
+        const producto2 = productoSeleccionado.querySelector('#subSection-cart').querySelectorAll(".card-cart");
+        const producto3 = [...producto2];
+
+        const facturaCliente = {
+            nombre: document.getElementById('txtNombre').value.toUpperCase(),
+            direccion: document.getElementById('txtDireccion').value.toUpperCase(),
+            telefono: parseInt(document.getElementById('txtTelefono').value),
+            productosComprados: []
+        }
+
+        producto3.forEach( (e) => {
+            
+            newProductoComprado = {
+                imagen: e.querySelector('.imagen-producto').src,
+                nombre: e.querySelector('.h-nombre').textContent,
+                medida: e.querySelector('.p-medida').textContent,
+                categoria: e.querySelector('.span-categoria').textContent,
+                cantidad: parseInt(e.querySelector('.cantidad-cart').getAttribute('value')),
+                precio: parseInt(e.querySelector('.p-precio').textContent),
+                precioTotal: parseInt(e.querySelector('.clase-total').textContent),
+                id: 2
+            }
+            facturaCliente.productosComprados.push(newProductoComprado);
+        })
+        
+        console.log(facturaCliente);
+        
+    }
+})
+
+
 
 document.getElementById('img-heart').addEventListener('click', () => {
     location.href = '../favorites.html';
