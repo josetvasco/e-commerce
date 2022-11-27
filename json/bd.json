@@ -1,0 +1,145 @@
+{
+  "productos": [
+    {
+      "id": 1,
+      "nombre": "ARROZ",
+      "medida": "1 KL",
+      "categoria": "DESPENSA",
+      "precio": "2500",
+      "imagen": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/186299/7702511000021.jpg?v=637813981775570000"
+    },
+    {
+      "id": 2,
+      "nombre": "LENTEJAS",
+      "categoria": "DESPENSA",
+      "medida": "500 GR",
+      "precio": 2900,
+      "imagen": "https://exitocol.vtexassets.com/arquivos/ids/13174757/Lenteja-Frescampo-X-1000-gr-1121606_a.jpg?v=1754195957"
+    },
+    {
+      "id": 3,
+      "nombre": "ACEITE",
+      "categoria": "DESPENSA",
+      "medida": "3000 ML",
+      "precio": 30000,
+      "imagen": "https://cooratiendas328.com/rails/active_storage/representations/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBOXA4VHc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--7c2e989db82dcd13cf35394a606d9acb0b0faa7e/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9TY21WemFYcGxYM1J2WDJacGRGc0hhUUlnQTJrQ0lBTTZER052Ym5abGNuUkpJZ2hxY0djR09nWkZWRG9LYzJGMlpYSjdDRG9NY1hWaGJHbDBlV2xmT2dwemRISnBjRlE2RDJKaFkydG5jbTkxYm1SYkNHa0IvMmtCLzJrQi93PT0iLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--f9b6205701877dad933126b17f2a1a57fbbba520/7702161987406.png?locale=es"
+    },
+    {
+      "id": 4,
+      "nombre": "LECHE",
+      "categoria": "LACTEOS",
+      "medida": "1 L",
+      "precio": 2500,
+      "imagen": "https://multimedia.diezequis.com/articulos/leche1000-012_1.jpg"
+    },
+    {
+      "id": 5,
+      "nombre": "YOGURT",
+      "categoria": "LACTEOS",
+      "medida": "1 L",
+      "precio": 3000,
+      "imagen": "https://s.cornershopapp.com/product-images/1064140.jpg?versionId=9EB_N_YFcr6DIZu349K7C_VNjGSCzqKn"
+    },
+    {
+      "id": 6,
+      "nombre": "QUESITO",
+      "categoria": "LACTEOS",
+      "medida": "3000 ML",
+      "precio": 3700,
+      "imagen": "https://supermercadosla80.com/rails/active_storage/representations/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBNXVlSWc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--70639d6169defe408e62b73c534dad465eee7c51/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9TY21WemFYcGxYM1J2WDJacGRGc0hhUUlnQTJrQ0lBTTZER052Ym5abGNuUkpJZ2hxY0djR09nWkZWRG9LYzJGMlpYSjdDRG9NY1hWaGJHbDBlV2xmT2dwemRISnBjRlE2RDJKaFkydG5jbTkxYm1SYkNHa0IvMmtCLzJrQi93PT0iLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--f9b6205701877dad933126b17f2a1a57fbbba520/003037.jpg?locale=es"
+    },
+    {
+      "id": 7,
+      "nombre": "CERVEZA X 6",
+      "categoria": "LICORES",
+      "medida": "3000 ML",
+      "precio": 16000,
+      "imagen": "https://supermercadosla80.com/rails/active_storage/representations/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBNytlSWc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--8f98cc205c74fd504770b0b70304797d0bb02758/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9TY21WemFYcGxYM1J2WDJacGRGc0hhUUlnQTJrQ0lBTTZER052Ym5abGNuUkpJZ2hxY0djR09nWkZWRG9LYzJGMlpYSjdDRG9NY1hWaGJHbDBlV2xmT2dwemRISnBjRlE2RDJKaFkydG5jbTkxYm1SYkNHa0IvMmtCLzJrQi93PT0iLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--f9b6205701877dad933126b17f2a1a57fbbba520/003211.jpg?locale=es"
+    },
+    {
+      "id": 8,
+      "nombre": "BUCHANANS",
+      "categoria": "LICORES",
+      "medida": "750 ML",
+      "precio": 152900,
+      "imagen": "https://bevgo.com.co/wp-content/uploads/2020/12/661.jpg"
+    },
+    {
+      "id": 9,
+      "nombre": "OLD PARR",
+      "categoria": "LICORES",
+      "medida": "750 ML",
+      "precio": 140800,
+      "imagen": "https://supermercadosla80.com/rails/active_storage/representations/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBOXVlSWc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--ac21d2c0ddccfd6a0a9bf5fd5f74ab1c896537c2/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9TY21WemFYcGxYM1J2WDJacGRGc0hhUUlnQTJrQ0lBTTZER052Ym5abGNuUkpJZ2hxY0djR09nWkZWRG9LYzJGMlpYSjdDRG9NY1hWaGJHbDBlV2xmT2dwemRISnBjRlE2RDJKaFkydG5jbTkxYm1SYkNHa0IvMmtCLzJrQi93PT0iLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--f9b6205701877dad933126b17f2a1a57fbbba520/003330.jpg?locale=es"
+    },
+    {
+      "id": 10,
+      "nombre": "DETODITO BBQ",
+      "categoria": "SNACKS",
+      "medida": "165 GR",
+      "precio": 7210,
+      "imagen": "https://pacardylwpmedia.s3.us-east-2.amazonaws.com/wp-content/uploads/2022/03/18173130/7702189057624.jpg"
+    },
+    {
+      "id": 11,
+      "nombre": "GALLETA FESTIVAL X12",
+      "categoria": "SNACKS",
+      "medida": "600 GR",
+      "precio": 8800,
+      "imagen": "https://domain.distrilabendicion.com/79424ad3f7b34e92b33af5309d990477/_bill/_thumbs/562_538_zoom_festival-x-4-x-12.jpg"
+    },
+    {
+      "id": 12,
+      "nombre": "PAPAS POLLO",
+      "categoria": "SNACKS",
+      "medida": "105 GR",
+      "precio": 4030,
+      "imagen": "https://s.cornershopapp.com/product-images/2698918.jpg?versionId=1fqzgZH9Vlpi2QxkzMRVbhgDT8jSmLUa"
+    },
+    {
+      "id": 13,
+      "nombre": "COCA COLA",
+      "categoria": "BEBIDAS",
+      "medida": "3000 ML",
+      "precio": 6500,
+      "imagen": "https://www.mayordomo.com.co/images/products/lgImg1596226131.jpg"
+    },
+    {
+      "id": 14,
+      "nombre": "DEL VALLE",
+      "categoria": "BEBIDAS",
+      "medida": "2500 ML",
+      "precio": 3500,
+      "imagen": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhESExAREhUOEREVEBgVDxEQFRIQGBUYFxUTFRMYHSohGBsmHRUVIjMiJiosLy8vFyA0OTQtOCkuLywBCgoKDg0OHBAQHDMnISYuLi4zLjAuMDEuLjAwLi4uLjAuLi4vLjAuLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLv/AABEIAOEA4QMBIgACEQEDEQH/xAAcAAEAAgMBAQEAAAAAAAAAAAAABQYBBAcDAgj/xABAEAACAQIEAwQGBgYLAAAAAAAAAQIDEQQSITEFBiITQVFhB3GBkbHBMkJScqHhFBUjM7LSJDQ1RFNUYnOC0fD/xAAbAQEAAgMBAQAAAAAAAAAAAAAAAgMBBAUGB//EADkRAAIBAgMFBQMKBwAAAAAAAAABAgMRBCExBRJBUWETcYGhsSKR0RQVFiMyQlPB0vAGUpKT0+Hx/9oADAMBAAIRAxEAPwDuIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABF8zYmdLB4upTdp0sNXnTdr2nGnJxdvWkASgPyhzRxKvKUM1atJuKbbqTk83jdu9zq/oY4lVm3TnVqTj2N0pTlNKSktVfZ7mLmbHWAAZMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA1eI0VOlUhJ2jUhKMvutWa92h7VqqgnKTskQ0sQ6zu9ILZfN+ZXOoollOm558Csz9GuBqKLqKTdl9Sk0vJXi2S3LPLlDCVn2MmkoWSlGKv4pWS8EyZhUj4/ijwxKjLVPVapp/Mr37ZlqhFuzJsEZw/HZuif0u5/a/Mky6MlJXRRODg7MAAkRAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABhmSI5jxfZ0ZWes+le3f/wB5kKlRU4OctErk6cHUmoLVuxXeP8VlWnli2oQelu9+LImcGt237T1w8dPWK7PC4qrKs3Unq/LoeqpQjSShDRHjcxcA0bI2Ls+qcppqSlZrbVl64DxLtqev0o6S8/MpVLY3uA4nssRHwn0s7ey8VKjUSb9mWT7+DOfjqCrU3/Ms1+aL4AD2B5oAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFS52ra04eTfvf5FtKRzi/268oo5m2JOOElbovNHQ2ZFPEK/BNmhT2Neqz3g9DXqbnkq2iPQQ1PNsyjBhM1y2xsUWKkrSi/CzMUdz5xTLoytTvyIJe3Y6RhamaEJfain70e5o8H/AHFL7hvH0CDvFM8fJbsmkAASIgAAAAAAAAAAAAAAAAAAAAAAAAAAApPOmlaL8YIuxQOcKzlict9KcYpe1XfxOVtpr5I0+aOlslN4jwZq03oa9R6m/a2ngRtaV2/WeWxEN1K7O/TzZgGAapdY96J8Yl7H3g5av1GeJLSL9ZsKnei2iCdqiR0HhCtQpfcRukZy9iHPD0pPe1n7HYkz3lJpwi1yXoePrJqpJPmwACwrAAAAAAAAAAAAAAAAAAAAAAAAAAABz7myl/SZWu7xg/GzsdBKDzVgas8TOcFpFQ3qKF+nZJvUpr4Sjio9nWnuLW+WvLNrUfL62B+to03Uem6r6at5J6W5HmqcrLpldpdzI+tRlmfRPfTpZYIYSo0rq10vrbe41+JVOpv5955zbWDpYaEXSnvO/TLLp8Tr7K2lWxEpdpS3dLa5+9Igdfdv5MWfuPWtSjVktcrW7y3uvD8z5/Vqy2dZK2smoNvytd6Lf16eBLD4XZNWmpTryhLjFpO3itVy58uUMRtDa1Kq4Qw0ZLhJStflk9Hz4ZantgYXbsr6eBniUJdPS+/6p8cKwjzylklkjs73zW0/Hf2jmCEnKNoySvodyn/DmFqRUYVnZ539l26ZO3mcWp/FeLpNynhs07WvLuvnEvHKsbYal55v4mvkTJD8r3/RaV9+r+JkwbUaapLs07pZX52yLu2db61qzlnblfO2fIAAyAAAAAAAAAAAAAAAAAAAAAAAAAAAAUbm3EuOIskto/AvJUOY6kFXtOEZKUY77r3akJ4jD4e1TERvHThq9NcimvhMTioOlhpbstb56LVXV7HvRm2lZN6K+mhEcT0k7rLf3P2ePrJ+WsUkkrLZKxV8fX63F2s9GcnamJouK36eXNO0l1X3brk1bqjo7PwOIhnGr7XFNXi+j+94p36PR6UJ5L5rp92nhpv72ajxEpNxje22Zp2UL31fib2MT6bOLXddKTTW7zLc+alG1k0nLwSUbPw03K57IwmHowxVWtenLRKPtS6Zysnz4K2hOht3E4nEVMLRw9qkdXKV4R65K7v91ceNkSfBMYlaKUnlW7fvNziWLWWGZpN332t3I0+EU5X18PC598fpNqCTa32flb5irLB1sO1ClaPWTb1WpB4PaEHft1Keb+yop9FZ+b8i3cD/AHEP+X8TJAjOXaeXDUlrpF7/AHmSZ2aMVGnGK0SXoarcm7y149/EAAsMAAAAAAAAAAAAAAAAAAAAAAAAAAAA4X6XuJ1qXEbU61SC7KloptK+vdsd0OAemz+0V/s0vmYcVJWauSjJxd0y14Pi2JdOMlOcnkTk8il3d+hz3jnN+MVWdqkWov8AwoWXuR0HlLHdlLDyb6ZRjGfhkkra+rR+wieK8NnhK0cNFyvUxGMxskqE8RnoUYxp4aEoRlFJXlOSlOSjGUYu+xGrRpzVpRT70hSrVIZxk14sosuf8YsvVRvF3V6K/wC/Iw+f8c9VOl7KMX8bl8xOCq4alxvDuVJRocOw1XD9jTdCMU6laopKnmajNSb1T1sjX565X/Tcfi67qOnTwmCwU6ihGEqk5VFNRjBTlGK+i7tvuIyoU5RjGUU1HRWyXdyMwqShKU4uzla74uysr8+hF8qc7Y2tUanVi1buo018j05/5ixUI0nCvKDbd7RgvkR/BOCKhj61CGJoV40suWrGcVGalFSWzaTWzV3Zo3ufODzqQo5ZQfU1aOeb2vdqMXZaWv5k+ypKOi9y/Mj2tTe+0/ezr/o6rzqcNwk6knOc6bcpPdvPLVllK36PcO6fDsJB7xpNPplH60u56oshJW4GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAcx9IPI88finOFSlTap01FyjWnKUurpcY6KP8AqtodOOY+kLjFalicihTlDJFxcowbzWs11pK2utnfXuAIanTcKShLenHLLvV1o/gR3EuL1Fj6klUnUy4OtRrRlWwlft8LGSUaLg4JUm5VLtzu7X31vIwr56ee1s95W3tdt2/E5xxzJ2tV9rLrUlJa9Wt7PTxSLoxTX+7GvKbi7L0b5cvEtnEuaZ5MXVc4V5Sp1cHtg6cKlCFOnOHawetaUZVZxvTdtHZaoYnjlWpO8K0JweBlSq1KiwcqGMjTlSUVV+w0qk3llaUdNXdopM6yd06+ZVG3PNThJpvLByu43u4JbeBipWUlaeIk73TywSTi2rt2jq3lj56GXTjw9V8StVqnFeUvTdOrcvYuLryvXoqdSNKU7OlDNelF5IKFkldpJruSJDmeolGnevGFlLeUU81l1Lq37/J+w5XyfXUcXCV3NRyb98YpdP4WOk808UsoZMLOf7KVaLzYeknCFlJ1HPRQvKOi6noaD2fSnvKcnZvp6tO5tSxVaKi4JXt19Lo6Jyi4vB0HGSkmpNNbPrlt5E0V7kHFdrw/C1MuXtKbdr3S6nsWEvUVFbq0X/DKbeb1AAMmQAAAAAAAAAAAAAAAAAAAAAAAAAAAcm9JfDsVLFdpQnh0nTgrVW4vTvTS+Z1kofOuuIXlCPzNXGYv5LS7Xd3s0rd/VGxhsL8pn2ak45apJ+T/AHyaIClweu6Ubxg243eSatfvtc5rxjlnGdrNqhJ3b2qUv5jslFdEfUiKlHVmg9v0opb9J58pL9LLvmau39XVXjBv0mjjz5axv+Vq++n/ADH0uVca/wC7TXrlS/mOvOD8zDpsfSHDfhS/rX6B8yY38aH9uX+Q5/yryri41ouVOMV51YP4Nly5k4fjEqDovB05QhKmpSnUbs9W0rWzXd77XS0JHCUbTi/PyNrikU1H2/Ix9Iae65Ro6c5/CKMrYlZtRlX14xhb1nItXIeDdHAYWk2pOlTy3Ssmsztb2WLCRvL39Xo/c+bJI7EJb0VLmrmlOO7Jx5MAAkRAAAAAAAAAAAAAAAAAAAAAAAAAAABTedsP+0pz7pRt7U/zLkQ/MuDdWhKyvKHVHztuvcaW0aLrYaUFrqvDM28DVVKvGT0095S6dbRLwMZTwhI9FUPBSuz1DjZ5H04mMp8SrGYVbizFmfTVjyrTbt5bH1Oqjc4DhO2rQjuovNP7qLqFGVWagtW7GJSVOLnLhmXrhdHJRpR+zCN/XbU3AD6GkkrI8c3dtsAAyYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKPx3lmam6lGLnGbu4reLe9l3o1+G8uVakryhKlBbuSs2/BR3OgA5U9j4edXfd+7h8fPuOlHaldU9zwvx+HjY5fx3Ayo1pRd7PWD+1E3OC8AnXpznfKlpC60m+/1LzL/VoRlpKMZeuKfxPuKtou7YqjsWl2jk3ePCOnnfhwLZbXqOkopWllnfl068Tn36krfQWHnm2u0lH15r2LXy/wAHWGhZvNOes38IryRMA2sJs2jhpOcbt9bZd1kvfqauIx9WtDceS49f3yAAOgaQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB/9k="
+    },
+    {
+      "id": 15,
+      "nombre": "AGUA BRISA",
+      "categoria": "BEBIDAS",
+      "medida": "1000 ML",
+      "precio": 2000,
+      "imagen": "https://cdn.shopify.com/s/files/1/0492/2458/1274/products/supermercados_la_vaquita_supervaquita_agua_brisa_1l_ecoflex_bebidas_liquidas_2b6ae2d9-3f61-4bfd-9f38-bf4258f1db8e_1024x1024.jpg?v=1620488174"
+    }
+  ],
+  "favoritos": [],
+  "carrito": [
+    {
+      "imagen": "https://exitocol.vtexassets.com/arquivos/ids/13174757/Lenteja-Frescampo-X-1000-gr-1121606_a.jpg?v=1754195957",
+      "nombre": "LENTEJAS",
+      "medida": "500 GR",
+      "categoria": "DESPENSA",
+      "precio": 2900,
+      "id": 2,
+      "cantidad": 2
+    },
+    {
+      "imagen": "https://cooratiendas328.com/rails/active_storage/representations/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBOXA4VHc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--7c2e989db82dcd13cf35394a606d9acb0b0faa7e/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9TY21WemFYcGxYM1J2WDJacGRGc0hhUUlnQTJrQ0lBTTZER052Ym5abGNuUkpJZ2hxY0djR09nWkZWRG9LYzJGMlpYSjdDRG9NY1hWaGJHbDBlV2xmT2dwemRISnBjRlE2RDJKaFkydG5jbTkxYm1SYkNHa0IvMmtCLzJrQi93PT0iLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--f9b6205701877dad933126b17f2a1a57fbbba520/7702161987406.png?locale=es",
+      "nombre": "ACEITE",
+      "medida": "3000 ML",
+      "categoria": "DESPENSA",
+      "precio": 30000,
+      "id": 3,
+      "cantidad": 1
+    }
+  ]
+}

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="header">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit.</p>
+        <div>
+            <p>English ▼</p>
+            <p>USD ▼</p>
+        </div>
+    </section>
+    <div class="productos">
+        <section class="search">
+            <img id="logo" class="logo" src="./assets/logo.png" alt="logo">
+            <div class="search-bar">
+                <img src="./assets/location-dot.svg" alt="">
+                <form action="" id="busqueda-form">
+                    <input type="search" name="" id="input-busqueda">
+                    <button type="submit">🔎</button>
+                </form>
+            </div>
+            <div class="search-favs">
+                <img src="./assets/phone-volume.svg" alt="">
+                <p>|</p>
+                <div class="div-notificacion-favortios">
+                    <img id="img-heart" class="img-heart" src="./assets/heart.svg" alt="">
+                    <p class="cantidad-favoritos"><span id="cambio-cantidad">0</span></p>
+                </div>
+                <p>|</p>
+                <img src="./assets/cart-shopping.svg" alt="">
+                <p>|</p>
+                <img src="./assets/user.svg" alt="">
+            </div>
+        </section>
+        <section class="navbar">
+            <div class="navbar-categories">
+                <p>All Categories</p>
+            </div>
+            <div class="navbar-menu">
+                <p>Home ▼</p>
+                <p>Shop ▼</p>
+                <p>Product ▼</p>
+                <p>Mega Menu ▼</p>
+                <p>Blog ▼</p>
+                <p>Pages ▼</p>
+                <p>Contact ▼</p>
+            </div>
+            <div class="navbar-flash">
+                <img src="./assets/icons8-high-voltage-48.png" alt="">
+            </div>
+        </section>
+        <section id="section-cart" class="cart">
+            <h2 class="titulo-cart"><p>Cart</p></h2>
+            <div id="subSection-cart">
+
+            </div>
+            <!-- <div class="card-cart">
+                <div>
+                    <img class="imagen-producto" src="https://www.mayordomo.com.co/images/products/lgImg1596226131.jpg">
+                </div>
+                <div class="cart-description">
+                    <p><strong>COCA COLA</strong></p>
+                    <p><strong>Sold By: </strong>Jose</p>
+                    <p><strong>Quantity: </strong></p>
+                    <p>3000 ML</p>
+                </div>
+                <div class="cart-price">
+                    <p>Price</p>
+                    <p>$30000</p>
+                </div>
+                <div class="cart-quantity">
+                    <p>Qty</p>
+                    <div>
+                        <button class="button-minus-cart">-</button>
+                        <input class="cantidad-cart" type="text" disabled value="0">
+                        <button class="button-plus-cart">+</button>
+                    </div>
+
+                </div>
+                <div class="cart-total">
+                    <p>Total</p>
+                    <p>$3000</p>
+                </div>
+                <div class="actions-cart">
+                    <p>Action</p>
+                    <a class="action-cart-save" href="/">Save for later</a>
+                    <a class="action-cart-remove" href="/">Remove</a>
+                </div>
+            </div> -->
+            <div class="cart-buttons">
+                <button class="button-listo"><strong>Checkout</strong></button>
+            </div>
+        </section>
+        <section class="cart-total-final">
+            <h3>Cart Total</h3>
+            <div>
+                <p>Cuppon Apply</p>
+            </div>
+            <div class="coupon-total">
+                <input type="text" placeholder="Enter Coupon Code Here...">
+                <button>Apply</button>
+            </div>
+            <div class="cart-subtotal">
+                <p>Subtotal</p>
+                <p>$<span id="subtotal">0</span></p>
+            </div>
+            <div class="cart-discount">
+                <p>Coupon Discount</p>
+                <p>(-) 0</p>
+            </div>
+            <div class="cart-shipping">
+                <p>Shipping</p>
+                <p>$<span id="total-shipping">20000</span></p>
+            </div>
+            <div class="cart-total-usd">
+                <p>Total (COP)</p>
+                <p>$<span id="total-COP">0</span></p>
+            </div>
+            <div class="cart-buttons">
+                <button>Process To Checkout</button>
+                <button>Return To Shopping</button>
+            </div>
+        </section>
+        <section class="footer">
+            <div class="div-footer">
+                <div class="subdiv-footer">
+                    <img src="./assets/logo.png" alt="Logo">
+                    <p class="p-info">In publishing and grapihic design. Lorem ipsum is a placeholder text commonly used
+                        to demonstrate the visual form.</p>
+                    <div class="p-info-casa">
+                        <img src="./assets/casa.png" alt="">
+                        <p>1418 Riverwood Drive, CA 96052,US</p>
+                    </div>
+                    <div class="p-info-casa">
+                        <img src="./assets/correo.png" alt="">
+                        <p>support@fastkart.com</p>
+                    </div>
+                </div>
+                <div class="subdiv-footer">
+                    <h2>Categories</h2>
+                    <p>Vegetables & Fruit</p>
+                    <p>Beverages</p>
+                    <p>Meats & Seafood</p>
+                    <p>Frozen Foods</p>
+                    <p>Biscuits & Snacks</p>
+                    <p>Grocery & Staples</p>
+                </div>
+                <div class="subdiv-footer">
+                    <h2>Useful Links</h2>
+                    <p>Home</p>
+                    <p>Shop</p>
+                    <p>About Us</p>
+                    <p>Blog</p>
+                    <p>Contact Us</p>
+                </div>
+                <div class="subdiv-footer">
+                    <h2>Help Center</h2>
+                    <p>Your Order</p>
+                    <p>Your Account</p>
+                    <p>Track Order</p>
+                    <p>Your Wishlist</p>
+                    <p>Search</p>
+                    <p>FAQ</p>
+                </div>
+                <div class="subdiv-footer">
+                    <h2>Contact Us</h2>
+                    <p>Hotline24/7: </p>
+                    <h3>+91 888 104 2340</h3>
+                    <p>Email Address:</p>
+                    <h3>fastkart@hotmail.com</h3>
+
+                </div>
+            </div>
+
+        </section>
+    </div>  
+
+    <script src="script/carrito.js"></script>
+</body>
+
+</html>
+
+<!-- <div class="navbar-right">
+    <ul>
+      <li class="navbar-email">platzi@example.com</li>
+      <li class="navbar-shopping-cart">
+        <img src="./icons/icon_shopping_cart.svg" alt="shopping cart">
+        <div>4</div>
+      </li>
+    </ul>
+  </div>
+
+  .navbar-shopping-cart {
+    position: relative;
+  }
+  .navbar-shopping-cart div {
+    width: 16px;
+    height: 16px;
+    background-color: var(--hospital-green);
+    border-radius: 50%;
+    font-size: var(--sm);
+    font-weight: bold;
+    position: absolute;
+    top: -6px;
+    right: -3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } -->

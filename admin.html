@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            text-align: center;
+            font-size: 60px;
+        }
+
+        body {
+            background-color: azure;
+        }
+
+        .card {
+            display: inline-block;
+            background-color: white;
+            margin: 10px;
+            width: 250px;
+            height: 300px;
+            border-radius: 5px;
+            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        }
+
+        .producto-imagen {
+            width: 150px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+
+        input {
+            display: flex;
+            margin: 5px;
+            width: 300px;
+            height: 3vh;
+            padding: 5px;
+            font-weight:  bold;
+        }
+
+        form button {
+            border: none;
+            width: 10vw;
+            height: 3vh;
+            color: white;
+            background-color: #262bbc;
+            margin: 5px;
+            border-radius: 5px;
+        }
+
+        form button:hover {
+            cursor: pointer;
+            color: #262bbc;
+            background-color: white
+        }
+
+        .producto-detalle button {
+            cursor: pointer;
+            color: white;
+            background-color: #262bbc;
+            border: none;
+            width: 70px;
+            height: 20px;
+            border-radius: 5px;
+        }
+
+        .producto-detalle button:hover {
+            cursor: pointer;
+            color: #262bbc;
+            background-color: white
+        }
+
+    </style>
+    <title>Admin</title>
+</head>
+<body>
+    <h1>Administrador</h1>
+    <form action="" id="filtrar-producto">
+        <h2>Filtrar producto</h2>
+        <input type="text" id="input-buscar" placeholder="Ingrese ID a buscar">
+        <button type="submit">Filtrar</button>
+    </form>
+
+    <form action="" id="form-producto">
+        <h2>CRUD producto</h2>
+        <input type="text" id="id" placeholder="ID" disabled>
+        <input type="text" id="nombre" placeholder="Ingrese el nombre" required>
+        <input type="text" id="categoria" placeholder="Ingrese la categoria" required>
+        <input type="text" id="medida" placeholder="Ingrese la medida" required>
+        <input type="text" id="precio" placeholder="Ingrese el precio" required>
+        <input type="text" id="imagen" placeholder="Ingrese la imagen" required>
+
+        <button type="submit" id="btn-crear">Agregar producto</button>
+        <button type="button" id="btn-modificar">Modificar producto</button>
+    </form>
+
+
+    <div id="div-productos" class="div-productos"></div>
+
+    <script src="./script/scriptAdmin.js"></script>
+</body>
+</html>
