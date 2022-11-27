@@ -68,7 +68,8 @@ img {
     color: white;
     right: -6px;
     bottom: 13px;
-    padding: 1px 3px;
+    padding: 1px 6px;
+    border-radius: 50%;
 }
 .cantidad-carrito {
     background-color: #f25050;
@@ -77,7 +78,8 @@ img {
     color: white;
     right: 8px;
     bottom: 13px;
-    padding: 1px 3px;
+    padding: 1px 6px;
+    border-radius: 50%;
 }
 
 .div-notificacion-favortios {
@@ -122,6 +124,10 @@ img {
 
 .img-heart {
     margin-right: -14px;
+}
+
+#img-carrito:hover {
+    cursor: pointer;
 }
 
 .img-heart:hover {
@@ -587,4 +593,8 @@ hr {
     background: lightgray;
     border: 1px solid lightgray;
     border-radius: 4px;
+}
+
+#section-datos {
+    display: none;
 }

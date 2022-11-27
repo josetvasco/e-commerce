@@ -13,7 +13,6 @@ const getFavoritos = async (api) => {
    
     try {
         if ( data.length > 0 ) {
-            
             sectionWihslist.innerHTML = ``;
             data.forEach( (element) => {
                
@@ -32,7 +31,7 @@ const getFavoritos = async (api) => {
                         </div>
                         <p class="p-medida" >${medida}</p>
                         <p class="p-categoria" >${categoria}</p>
-                        <p class="p-precio" >$${precio}</p>
+                        <p class="p-precio" >${precio}</p>
 
                         <button data-id=${id} class="button-agregar-carrito">Agregar carrito</button>
                         <button id=${id} class="button-eliminar-favorito">Eliminar favorito</button>
@@ -156,7 +155,7 @@ sectionWihslist.addEventListener('click', async (e) => {
                 categoria: productoSeleccionado.querySelector('.p-categoria').textContent,
                 precio: parseInt(productoSeleccionado.querySelector('.p-precio').textContent),
                 id: id,
-                cantidad: cantidadNueva
+                cantidad: parseInt(cantidadNueva)
             }
         
             await fetch(API_CARRITO + id, {

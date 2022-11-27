@@ -123,12 +123,12 @@
   ],
   "favoritos": [
     {
-      "imagen": "https://multimedia.diezequis.com/articulos/leche1000-012_1.jpg",
-      "nombre": "LECHE",
-      "medida": "1 L",
-      "categoria": "LACTEOS",
-      "precio": 2500,
-      "id": 4
+      "imagen": "https://exitocol.vtexassets.com/arquivos/ids/13174757/Lenteja-Frescampo-X-1000-gr-1121606_a.jpg?v=1754195957",
+      "nombre": "LENTEJAS",
+      "medida": "500 GR",
+      "categoria": "DESPENSA",
+      "precio": 2900,
+      "id": 2
     }
   ],
   "carrito": [
@@ -139,7 +139,7 @@
       "categoria": "DESPENSA",
       "precio": 2500,
       "id": 1,
-      "cantidad": 3
+      "cantidad": 1
     },
     {
       "imagen": "https://exitocol.vtexassets.com/arquivos/ids/13174757/Lenteja-Frescampo-X-1000-gr-1121606_a.jpg?v=1754195957",
@@ -149,6 +149,27 @@
       "precio": 2900,
       "id": 2,
       "cantidad": 1
+    }
+  ],
+  "ordenes": [
+    {
+      "nombre": "JOSE",
+      "direccion": "JOSE",
+      "telefono": 25555,
+      "totalAPagar": 22500,
+      "productosComprados": [
+        {
+          "imagen": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/186299/7702511000021.jpg?v=637813981775570000",
+          "nombre": "ARROZ",
+          "medida": "1 KL",
+          "categoria": "DESPENSA",
+          "cantidad": 1,
+          "precio": 2500,
+          "precioTotal": 2500,
+          "id": 1
+        }
+      ],
+      "id": 1
     }
   ]
 }

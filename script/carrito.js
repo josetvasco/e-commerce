@@ -1,17 +1,22 @@
 const API_URL = 'http://localhost:3000/carrito/';
 const API_FAVORITO = 'http://localhost:3000/favoritos/';
+const API_ORDENES = 'http://localhost:3000/ordenes/';
 
 
 const sectionCart = document.getElementById('subSection-cart');
 const sectionCart2 = document.getElementById('section-cart');
 const sectionDatos = document.getElementById('section-datos');
 const inputCantidad = document.getElementById('input-cantidad');
+const btnCheckCarrito = document.getElementById('id-cart-button')
+const Sectionfactura = document.getElementById('id-cart-total-final')
 const restarButton = document.getElementById('restar-button');
 const totalCOP = document.getElementById('total-COP');
 const subtotalCOP = document.getElementById('subtotal');
 const totalShipping = document.getElementById('total-shipping');
 const cantidadFavoritos = document.getElementById('cambio-cantidad');
 const cantidadCarrito = document.getElementById('cambio-cantidad-carrito');
+const btnCheckout = document.getElementById('process-checkout');
+const btnCancel = document.getElementById('button-cancel');
 
 
 
@@ -145,8 +150,6 @@ sectionCart.addEventListener('click', async (e) => {
             method: 'DELETE'
         })
     }
-
-
 })
 
 sectionCart.addEventListener('click', async (e) => {
@@ -225,7 +228,7 @@ sectionDatos.addEventListener('click', (e) => {
     e.preventDefault();
     const btnBuyNow = e.target.classList.contains('button-buy-now');
 
-    if(btnBuyNow) {
+    if (btnBuyNow) {
         const productoSeleccionado = e.target.parentElement.parentElement.parentElement;
         const producto2 = productoSeleccionado.querySelector('#subSection-cart').querySelectorAll(".card-cart");
         const producto3 = [...producto2];
@@ -234,11 +237,11 @@ sectionDatos.addEventListener('click', (e) => {
             nombre: document.getElementById('txtNombre').value.toUpperCase(),
             direccion: document.getElementById('txtDireccion').value.toUpperCase(),
             telefono: parseInt(document.getElementById('txtTelefono').value),
+            totalAPagar: parseInt(document.getElementById('total-COP').textContent),
             productosComprados: []
         }
 
-        producto3.forEach( (e) => {
-            
+        producto3.forEach(async (e) => {
             newProductoComprado = {
                 imagen: e.querySelector('.imagen-producto').src,
                 nombre: e.querySelector('.h-nombre').textContent,
@@ -247,17 +250,58 @@ sectionDatos.addEventListener('click', (e) => {
                 cantidad: parseInt(e.querySelector('.cantidad-cart').getAttribute('value')),
                 precio: parseInt(e.querySelector('.p-precio').textContent),
                 precioTotal: parseInt(e.querySelector('.clase-total').textContent),
-                id: 2
+                id: parseInt(e.querySelector('a').getAttribute('data-id')),
             }
+
             facturaCliente.productosComprados.push(newProductoComprado);
+
+            await fetch(API_URL + parseInt(e.querySelector('a').getAttribute('data-id')), {
+                method: 'DELETE'
+            })
         })
-        
-        console.log(facturaCliente);
-        
+
+        fetch(API_ORDENES, {
+            method: 'POST',
+            body: JSON.stringify(facturaCliente),
+            headers: {
+                "Content-type": "application/json"
+            }
+        })
     }
 })
 
+btnCheckout.addEventListener('click', async (e) => {
+    e.preventDefault();
+    const peticion = await fetch(API_URL);
+    const data = await peticion.json();
+    
+    if (data.length == 0) {
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'No hay productos en el carrito!',
+        })
+    } else {
+        sectionDatos.style.display = 'block';
+        sectionCart2.style.display = 'none';
+        btnCheckCarrito.style.display = 'none';
+        Sectionfactura.style.display = 'none';
+    }
 
+})
+
+btnCancel.addEventListener('click', (e) => {
+    e.preventDefault();
+
+    sectionDatos.style.display = 'none';
+    sectionCart2.style.display = 'block';
+    btnCheckCarrito.style.display = 'flex';
+    Sectionfactura.style.display = 'flex'
+})
+
+document.getElementById('return-shopping').addEventListener('click', () => {
+    location.href = '../index.html';
+});
 
 document.getElementById('img-heart').addEventListener('click', () => {
     location.href = '../favorites.html';
