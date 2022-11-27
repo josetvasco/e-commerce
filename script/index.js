@@ -8,6 +8,7 @@ const API_CARRITO = 'http://localhost:3000/carrito/';
 const divProductos = document.getElementById('seccion-productos');
 const formBusqueda = document.getElementById('busqueda-form');
 const cantidadFavoritos = document.getElementById('cambio-cantidad');
+const cantidadCarrito = document.getElementById('cambio-cantidad-carrito');
 const pFiltros = document.getElementsByClassName('p-filtros');
 const pFiltrosArray = [...pFiltros];
 
@@ -97,8 +98,8 @@ divProductos.addEventListener('click', async (e) => {
 
     if (btnFavoritos) {
         const productoSeleccionado = e.target.parentElement.parentElement.parentElement;
-        const id = parseInt(productoSeleccionado.querySelector('div').getAttribute('data-id')),
-
+        const id = parseInt(productoSeleccionado.querySelector('div').getAttribute('data-id'))
+        
             newProductoFavorito = {
                 imagen: productoSeleccionado.querySelector('.imagen-producto').src,
                 nombre: productoSeleccionado.querySelector('.h-nombre').textContent,
@@ -146,6 +147,15 @@ const cambioFavorito = async (api) => {
 }
 
 cambioFavorito(API_FAVORITO)
+
+const cambioCarrito = async (api) => {
+    const peticion4 = await fetch(api)
+    const data4 = await peticion4.json();
+
+    cantidadCarrito.textContent = data4.length
+}
+
+cambioCarrito(API_CARRITO)
 
 divProductos.addEventListener('click', async (e) => {
     e.preventDefault();

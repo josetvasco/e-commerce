@@ -70,6 +70,15 @@ img {
     bottom: 13px;
     padding: 1px 3px;
 }
+.cantidad-carrito {
+    background-color: #f25050;
+    font-size: 1.5rem;
+    position: relative;
+    color: white;
+    right: 8px;
+    bottom: 13px;
+    padding: 1px 3px;
+}
 
 .div-notificacion-favortios {
     display: flex;

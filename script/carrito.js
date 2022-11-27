@@ -10,6 +10,7 @@ const totalCOP = document.getElementById('total-COP');
 const subtotalCOP = document.getElementById('subtotal');
 const totalShipping = document.getElementById('total-shipping');
 const cantidadFavoritos = document.getElementById('cambio-cantidad');
+const cantidadCarrito = document.getElementById('cambio-cantidad-carrito');
 
 
 
@@ -19,11 +20,9 @@ const getCarrito = async (api) => {
 
     try {
         if (data.length > 0) {
-
-
             data.forEach(element => {
 
-                const { id, cantidad, nombre, medida, imagen, precio } = element;
+                const { id, cantidad, nombre, medida, imagen, precio, categoria } = element;
 
                 const div = document.createElement('div');
                 div.classList.add('card-cart');
@@ -36,14 +35,14 @@ const getCarrito = async (api) => {
                     <img class="imagen-producto" src=${imagen}>
                 </div>
                 <div class="cart-description">
-                    <p><strong>${nombre}</strong></p>
-                    <p><strong>Sold By: </strong>Jose</p>
+                    <p class="h-nombre"><strong>${nombre}</strong></p>
+                    <p><strong>Sold By: </strong> <span class="span-categoria">${categoria}</span></p>
                     <p><strong>Quantity: </strong></p>
-                    <p>${medida}</p>
+                    <p class="p-medida">${medida}</p>
                 </div>
                 <div class="cart-price">
                     <p>Price</p>
-                    <p id="precio">${precio}</p>
+                    <p class="p-precio" id="precio">${precio}</p>
                 </div>
                 <div class="cart-quantity">
                     <p>Qty</p>
@@ -60,18 +59,21 @@ const getCarrito = async (api) => {
                 </div>
                 <div class="actions-cart">
                     <p>Action</p>
-                    <a class="action-cart-save" id=${id} href="#">Save for later</a>
+                    <a class="action-cart-save" data-id=${id} id=${id} href="#">Save for later</a>
                     <a class="action-cart-remove" id=${id} href="#">Remove</a>
                 </div>
                 `
-
                 sectionCart.appendChild(div)
             });
         }
 
 
     } catch (error) {
-
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'No hay productos en el carrito!',
+        })
     }
 }
 
@@ -113,9 +115,9 @@ sectionCart2.addEventListener('click', (e) => {
     e.preventDefault()
 
     const btnListo = e.target.classList.contains('button-listo');
-
     if (btnListo) {
-        const productoSeleccionado = e.target.parentElement.parentElement
+        const productoSeleccionado = e.target.parentElement.parentElement;
+
         const divProducto = productoSeleccionado.querySelectorAll('.card-cart')
         const divProductoArray = [...divProducto];
 
@@ -144,79 +146,59 @@ sectionCart.addEventListener('click', async (e) => {
     }
 
 
-
 })
 
-//AQUIIIIIIIIIIIIII
 sectionCart.addEventListener('click', async (e) => {
+    const peticion2 = await fetch(API_FAVORITO);
+    const data2 = await peticion2.json();
+
     const btnGuardar = e.target.classList.contains('action-cart-save');
 
     if (btnGuardar) {
         const productoSeleccionado = e.target.parentElement.parentElement;
-        console.log(productoSeleccionado);
-        const id = (productoSeleccionado.querySelector('div').getAttribute('data-id'))
-        console.log(id);    
+        const id = parseInt(productoSeleccionado.querySelector('a').getAttribute('data-id'))
 
 
+        newProductoFavorito = {
+            imagen: productoSeleccionado.querySelector('.imagen-producto').src,
+            nombre: productoSeleccionado.querySelector('.h-nombre').textContent,
+            medida: productoSeleccionado.querySelector('.p-medida').textContent,
+            categoria: productoSeleccionado.querySelector('.span-categoria').textContent,
+            precio: parseInt(productoSeleccionado.querySelector('.p-precio').textContent),
+            id: parseInt(id)
+        }
 
-        // const id = e.target.id;
-        // await fetch(API_URL + id, {
-        //     method: 'DELETE'
-        // })
+        const productoVerficado = data2.find((element) => {
+            return id === element.id
+        })
+
+        if (productoVerficado == undefined) {
+            Swal.fire(
+                'Agregado!',
+                'El producto fue agregado a Favorito!',
+                'success'
+            )
+
+            fetch(API_FAVORITO, {
+                method: 'POST',
+                body: JSON.stringify(newProductoFavorito),
+                headers: {
+                    "Content-type": "application/json"
+                }
+            })
+
+            const id = e.target.id;
+            await fetch(API_URL + id, {
+                method: 'DELETE'
+            })
+
+        } else {
+            const id = e.target.id;
+            await fetch(API_URL + id, {
+                method: 'DELETE'
+            })
+        }
     }
-
-
-
-    // const productoSeleccionado = e.target.parentElement.parentElement.parentElement;
-    
-
-    //     newProductoFavorito = {
-    //         imagen: productoSeleccionado.querySelector('.imagen-producto').src,
-    //         nombre: productoSeleccionado.querySelector('.h-nombre').textContent,
-    //         medida: productoSeleccionado.querySelector('.p-medida').textContent,
-    //         categoria: productoSeleccionado.querySelector('.p-categoria').textContent,
-    //         precio: parseInt(productoSeleccionado.querySelector('.p-precio').textContent),
-    //         id: parseInt(id)
-    //     }
-
-    // const productoVerficado = data2.find((element) => {
-    //     return id === element.id
-    // })
-
-
-    // if (productoVerficado == undefined) {
-    //     Swal.fire(
-    //         'Agregado!',
-    //         'El producto fue agregado a Favorito!',
-    //         'success'
-    //     )
-
-    //     fetch(API_FAVORITO, {
-    //         method: 'POST',
-    //         body: JSON.stringify(newProductoFavorito),
-    //         headers: {
-    //             "Content-type": "application/json"
-    //         }
-    //     })
-    // } else {
-    //     Swal.fire({
-    //         icon: 'error',
-    //         title: 'Oops...',
-    //         text: 'El producto ya existe en Favoritos!',
-    //     })
-    // }
-
-
-
-
-
-
-
-
-
-
-
-
 })
 
 const cambioFavorito = async (api) => {
@@ -227,6 +209,15 @@ const cambioFavorito = async (api) => {
 }
 
 cambioFavorito(API_FAVORITO)
+
+const cambioCarrito = async (api) => {
+    const peticion4 = await fetch(api)
+    const data4 = await peticion4.json();
+
+    cantidadCarrito.textContent = data4.length
+}
+
+cambioCarrito(API_URL)
 
 document.getElementById('img-heart').addEventListener('click', () => {
     location.href = '../favorites.html';
