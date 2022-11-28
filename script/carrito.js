@@ -69,12 +69,6 @@ const getCarrito = async (api) => {
                 `
                 sectionCart.appendChild(div)
             });
-        } else {
-            Swal.fire({
-                icon: 'error',
-                title: 'Oops...',
-                text: 'No hay productos en el carrito!',
-            })
         }
     } catch (error) {
         Swal.fire({
@@ -332,3 +326,4 @@ document.getElementById('img-carrito').addEventListener('click', () => {
 document.getElementById('id-admin').addEventListener('click', () => {
     location.href = '../admin.html';
 })
+

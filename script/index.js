@@ -9,7 +9,9 @@ const divProductos = document.getElementById('seccion-productos');
 const formBusqueda = document.getElementById('busqueda-form');
 const cantidadFavoritos = document.getElementById('cambio-cantidad');
 const cantidadCarrito = document.getElementById('cambio-cantidad-carrito');
+const modalCart = document.getElementById('modal-cart');
 const pFiltros = document.getElementsByClassName('p-filtros');
+const modalProduct = document.getElementById("modal-products")
 const pFiltrosArray = [...pFiltros];
 
 
@@ -246,3 +248,39 @@ document.getElementById('img-carrito').addEventListener('click', () => {
 document.getElementById('id-admin').addEventListener('click', () => {
     location.href = '../admin.html';
 })
+
+document.getElementById('img-carrito').addEventListener('mouseover', () => {
+    modalCart.style.display = 'flex'
+})
+document.getElementById('img-carrito').addEventListener('mouseout', () => {
+    modalCart.style.display = 'none'
+})
+
+const getProductoModal = async (api) => {
+    const peticion = await fetch(api);
+    const data = await peticion.json();
+
+    try {
+        if (data.length > 0) {
+            
+            modalProduct.innerHTML = ``
+            data.forEach((e) => {
+                const { id, nombre, medida, precio, imagen, categoria, cantidad} = e;
+
+                const div = document.createElement('div')
+                div.innerHTML = `
+                <img src="${imagen}" alt="">
+                <p class="modal-nom-product">${nombre}</p>
+                <p class="modal-qty">${cantidad}</p>
+                <p class="modal-plus">x</p>
+                <p class="modal-price">${cantidad * precio}</p>
+                `
+
+                modalProduct.appendChild(div)
+            })
+        } 
+    } catch (error) {
+    }
+}
+
+getProductoModal(API_CARRITO)
