@@ -242,3 +242,7 @@ document.getElementById('logo').addEventListener('click', () => {
 document.getElementById('img-carrito').addEventListener('click', () => {
     location.href = '../cart.html';
 })
+
+document.getElementById('id-admin').addEventListener('click', () => {
+    location.href = '../admin.html';
+})

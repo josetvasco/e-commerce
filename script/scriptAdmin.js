@@ -146,23 +146,6 @@ formFiltrar.addEventListener('submit', (e) => {
 
 })
 
-// formPrincipal.addEventListener('submit', (e) => {
-//     e.preventDefault();
-
-//     const type = selectType.value;
-//     const status = selectStatus.value;
-//     const search = (txtSearch.value).toUpperCase();
-
-//     if (type && type !== '') {
-//         getInmuebles(apiType + type);
-//         type.value = '';
-//     } else if (status && status !== '') {
-//         getInmuebles(apiStatus + status);
-//         status.value = '';
-//     } else if (search && search !== '') {
-//         getInmuebles(apiSearch + search);
-//         search.value = '';
-//     } else {
-//         window.location.reload();
-//     }
-// })
+document.getElementById('button-compras').addEventListener('click', (e) => {
+    location.href = '../compras.html';
+})

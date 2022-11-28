@@ -39,6 +39,10 @@ img {
     align-items: center;
 }
 
+#id-admin:hover {
+    cursor: pointer;
+}
+
 .header>p {
     margin-left: 6vw;
 }

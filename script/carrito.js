@@ -18,8 +18,6 @@ const cantidadCarrito = document.getElementById('cambio-cantidad-carrito');
 const btnCheckout = document.getElementById('process-checkout');
 const btnCancel = document.getElementById('button-cancel');
 
-
-
 const getCarrito = async (api) => {
     const peticion = await fetch(api)
     const data = await peticion.json();
@@ -71,9 +69,13 @@ const getCarrito = async (api) => {
                 `
                 sectionCart.appendChild(div)
             });
+        } else {
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'No hay productos en el carrito!',
+            })
         }
-
-
     } catch (error) {
         Swal.fire({
             icon: 'error',
@@ -267,6 +269,18 @@ sectionDatos.addEventListener('click', (e) => {
                 "Content-type": "application/json"
             }
         })
+
+        document.getElementById('txtNombre').value = ''
+        document.getElementById('txtDireccion').value = ''
+        document.getElementById('txtTelefono').value = ''
+
+        Swal.fire(
+            'Agregado!',
+            'El pedido ha sido tomado',
+            'success'
+        )
+
+
     }
 })
 
@@ -313,4 +327,8 @@ document.getElementById('logo').addEventListener('click', () => {
 
 document.getElementById('img-carrito').addEventListener('click', () => {
     location.href = '../cart.html';
+})
+
+document.getElementById('id-admin').addEventListener('click', () => {
+    location.href = '../admin.html';
 })

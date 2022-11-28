@@ -80,11 +80,36 @@
             background-color: white
         }
 
+        #button-compras {
+            border: none;
+            width: 10vw;
+            height: 3vh;
+            color: white;
+            background-color: #262bbc;
+            margin: 5px;
+            border-radius: 5px;
+        }
+
+        #button-compras:hover {
+            cursor: pointer;
+            color: #262bbc;
+            background-color: white
+        }
+
+        .div-button-compras {
+            display: flex;
+            justify-content: center;
+        }
+
     </style>
     <title>Admin</title>
 </head>
 <body>
     <h1>Administrador</h1>
+    <div class="div-button-compras">
+        <button id="button-compras">Ver Compras</button>
+    </div>
+
     <form action="" id="filtrar-producto">
         <h2>Filtrar producto</h2>
         <input type="text" id="input-buscar" placeholder="Ingrese ID a buscar">
