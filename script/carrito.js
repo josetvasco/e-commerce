@@ -296,7 +296,7 @@ btnCheckout.addEventListener('click', async (e) => {
             text: 'No hay productos en el carrito!',
         })
     } else {
-        sectionDatos.style.display = 'block';
+        sectionDatos.style.display = 'flex';
         sectionCart2.style.display = 'none';
         btnCheckCarrito.style.display = 'none';
         Sectionfactura.style.display = 'none';

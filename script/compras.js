@@ -1,8 +1,6 @@
 const API_URL = 'http://localhost:3000/ordenes';
 
-const divCliente = document.getElementById('datos-cliente')
-const divProducto = document.getElementById('datos-productos')
-
+const divCliente = document.getElementById('datos-ventas')
 
 const getOrdenes = async (api) => {
     const peticion = await fetch(api)
@@ -15,14 +13,27 @@ const getOrdenes = async (api) => {
                 const { direccion, id, nombre, telefono, totalAPagar, productosComprados } = element
 
                 const div = document.createElement('div')
-                div.classList.add('detalle-cliente')
+                div.setAttribute('id', 'datos-cliente')
 
                 div.innerHTML = `
-                <p>${nombre}</p>
-                <p>${direccion}</p>
-                <p>${telefono}</p>
-                <p>${totalAPagar}</p>
-                <p>Productos comprados:</p>
+                <div id="detalle-cliente">
+                    <div>
+                        <p>Nombre:</p>
+                        <p>${nombre}</p>
+                    </div>
+                    <div>
+                        <p>Direccion:</p>
+                        <p>${direccion}</p>
+                    </div>
+                    <div>
+                        <p>Telefono:</p>
+                        <p>${telefono}</p>
+                    </div>
+                    <div>
+                        <p>Total A Pagar:</p>
+                        <p>${totalAPagar}</p>
+                    </div>
+                </div>
                 `
                 divCliente.appendChild(div)
 
@@ -31,18 +42,19 @@ const getOrdenes = async (api) => {
                     const { imagen, nombre, medida, cantidad, categoria, id, precio, precioTotal } = e
 
                     const div2 = document.createElement('div')
-                    div2.classList.add('detalle-prodcuto')
+                    div2.setAttribute('id', 'datos-productos')
 
                     div2.innerHTML = `
-                        <p>${imagen}</p>
+                    <div class="detalle-producto">
                         <p>${nombre}</p>
                         <p>${medida}</p>
                         <p>${categoria}</p>
                         <p>${cantidad}</p>
                         <p>${precio}</p>
                         <p>${precioTotal}</p>
+                    </div>
                     `
-                    divProducto.appendChild(div2)
+                    divCliente.appendChild(div2)
 
                 })
             });

@@ -121,16 +121,76 @@
       "imagen": "https://cdn.shopify.com/s/files/1/0492/2458/1274/products/supermercados_la_vaquita_supervaquita_agua_brisa_1l_ecoflex_bebidas_liquidas_2b6ae2d9-3f61-4bfd-9f38-bf4258f1db8e_1024x1024.jpg?v=1620488174"
     }
   ],
-  "favoritos": [
+  "favoritos": [],
+  "carrito": [],
+  "ordenes": [
     {
-      "imagen": "https://exitocol.vtexassets.com/arquivos/ids/13174757/Lenteja-Frescampo-X-1000-gr-1121606_a.jpg?v=1754195957",
-      "nombre": "LENTEJAS",
-      "medida": "500 GR",
-      "categoria": "DESPENSA",
-      "precio": 2900,
+      "nombre": "GGG",
+      "direccion": "JJJ",
+      "telefono": 654654,
+      "totalAPagar": 25400,
+      "productosComprados": [
+        {
+          "imagen": "https://jumbocolombiaio.vtexassets.com/arquivos/ids/186299/7702511000021.jpg?v=637813981775570000",
+          "nombre": "ARROZ",
+          "medida": "1 KL",
+          "categoria": "DESPENSA",
+          "cantidad": 1,
+          "precio": 2500,
+          "precioTotal": 2500,
+          "id": 1
+        },
+        {
+          "imagen": "https://exitocol.vtexassets.com/arquivos/ids/13174757/Lenteja-Frescampo-X-1000-gr-1121606_a.jpg?v=1754195957",
+          "nombre": "LENTEJAS",
+          "medida": "500 GR",
+          "categoria": "DESPENSA",
+          "cantidad": 1,
+          "precio": 2900,
+          "precioTotal": 2900,
+          "id": 2
+        }
+      ],
+      "id": 1
+    },
+    {
+      "nombre": "HHHH",
+      "direccion": "IIII",
+      "telefono": 46465,
+      "totalAPagar": 218900,
+      "productosComprados": [
+        {
+          "imagen": "https://bevgo.com.co/wp-content/uploads/2020/12/661.jpg",
+          "nombre": "BUCHANANS",
+          "medida": "750 ML",
+          "categoria": "LICORES",
+          "cantidad": 1,
+          "precio": 152900,
+          "precioTotal": 152900,
+          "id": 8
+        },
+        {
+          "imagen": "https://cooratiendas328.com/rails/active_storage/representations/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBOXA4VHc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--7c2e989db82dcd13cf35394a606d9acb0b0faa7e/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9TY21WemFYcGxYM1J2WDJacGRGc0hhUUlnQTJrQ0lBTTZER052Ym5abGNuUkpJZ2hxY0djR09nWkZWRG9LYzJGMlpYSjdDRG9NY1hWaGJHbDBlV2xmT2dwemRISnBjRlE2RDJKaFkydG5jbTkxYm1SYkNHa0IvMmtCLzJrQi93PT0iLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--f9b6205701877dad933126b17f2a1a57fbbba520/7702161987406.png?locale=es",
+          "nombre": "ACEITE",
+          "medida": "3000 ML",
+          "categoria": "DESPENSA",
+          "cantidad": 1,
+          "precio": 30000,
+          "precioTotal": 30000,
+          "id": 3
+        },
+        {
+          "imagen": "https://supermercadosla80.com/rails/active_storage/representations/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBNytlSWc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--8f98cc205c74fd504770b0b70304797d0bb02758/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9TY21WemFYcGxYM1J2WDJacGRGc0hhUUlnQTJrQ0lBTTZER052Ym5abGNuUkpJZ2hxY0djR09nWkZWRG9LYzJGMlpYSjdDRG9NY1hWaGJHbDBlV2xmT2dwemRISnBjRlE2RDJKaFkydG5jbTkxYm1SYkNHa0IvMmtCLzJrQi93PT0iLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--f9b6205701877dad933126b17f2a1a57fbbba520/003211.jpg?locale=es",
+          "nombre": "CERVEZA X 6",
+          "medida": "3000 ML",
+          "categoria": "LICORES",
+          "cantidad": 1,
+          "precio": 16000,
+          "precioTotal": 16000,
+          "id": 7
+        }
+      ],
       "id": 2
     }
-  ],
-  "carrito": [],
-  "ordenes": []
+  ]
 }
