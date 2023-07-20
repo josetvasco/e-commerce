@@ -122,6 +122,25 @@
     }
   ],
   "favoritos": [],
-  "carrito": [],
+  "carrito": [
+    {
+      "imagen": "https://supermercadosla80.com/rails/active_storage/representations/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBOXVlSWc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--ac21d2c0ddccfd6a0a9bf5fd5f74ab1c896537c2/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9TY21WemFYcGxYM1J2WDJacGRGc0hhUUlnQTJrQ0lBTTZER052Ym5abGNuUkpJZ2hxY0djR09nWkZWRG9LYzJGMlpYSjdDRG9NY1hWaGJHbDBlV2xmT2dwemRISnBjRlE2RDJKaFkydG5jbTkxYm1SYkNHa0IvMmtCLzJrQi93PT0iLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--f9b6205701877dad933126b17f2a1a57fbbba520/003330.jpg?locale=es",
+      "nombre": "OLD PARR",
+      "medida": "750 ML",
+      "categoria": "LICORES",
+      "precio": 140800,
+      "id": 9,
+      "cantidad": 1
+    },
+    {
+      "imagen": "https://exitocol.vtexassets.com/arquivos/ids/13174757/Lenteja-Frescampo-X-1000-gr-1121606_a.jpg?v=1754195957",
+      "nombre": "LENTEJAS",
+      "medida": "500 GR",
+      "categoria": "DESPENSA",
+      "precio": 2900,
+      "id": 2,
+      "cantidad": 1
+    }
+  ],
   "ordenes": []
 }
