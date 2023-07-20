@@ -2,7 +2,7 @@
 
 Este proyecto fue creado con la idea de aprender HTML, CSS, JavaScript y el manejo de fake API, el proyecto también contiene un CRUD para modificación de la "base de datos".
 
-##Paso a paso para abrir el proyecto: 
+## Paso a paso para abrir el proyecto: 
   1. Git clone al proyecto.
   2. Abrimos la terminal y vamos a la ruta del proyecto.
   3. Abrir el proyecto en vscode o editor de confianza.
