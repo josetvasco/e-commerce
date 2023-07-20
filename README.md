@@ -7,5 +7,5 @@ Este proyecto fue creado con la idea de aprender HTML, CSS, JavaScript y el mane
   2. Abrimos la terminal y vamos a la ruta del proyecto.
   3. Abrir el proyecto en vscode o editor de confianza.
   4. En la terminal escribimos el siguiente comando < npm install -g json-server >.
-  5. Cuando termine el comando anterior, escribimos el siguiente < json-server --watch db.json >.
-  6. Después de abierto el proyecto, el archivo index.html lo corremos en el navegador.
+  5. Cuando termine el comando anterior, escribimos el siguiente < json-server --watch json/db.json >.
+  7. Después de abierto el proyecto, el archivo index.html lo corremos en el navegador.
